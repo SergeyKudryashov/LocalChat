@@ -98,7 +98,7 @@ public class KeyboardHelper {
 						recyclerView.postDelayed(new Runnable() {
 							@Override
 							public void run() {
-								RecyclerView.Adapter<RecyclerView.ViewHolder> adapter = recyclerView.getAdapter();
+								RecyclerView.Adapter adapter = recyclerView.getAdapter();
 								if (adapter != null && adapter.getItemCount() > 0) {
 									recyclerView.getLayoutManager().scrollToPosition(adapter.getItemCount() - 1);
 								}
